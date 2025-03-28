@@ -12,7 +12,7 @@ namespace StoreProject.ClientRoutes
         public static void ClientRoutes(this WebApplication app)
         {
             app.MapGet("client", () =>
-                new ClientModel("Junior", "12312312312", 1233333333)
+                new ClientModel("Junior", "12312312312", 1233333333, new DateTime(1999, 07, 25))
             );
 
 
