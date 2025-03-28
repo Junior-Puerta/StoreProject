@@ -1,4 +1,5 @@
 using StoreProject.ClientRoutes;
+using StoreProject.Data;
 
 
 Console.Clear();
@@ -9,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-// builder.Services.AddScoped<PersonContext>(); // Estou injetando no "container" (Program.cs), conexão com o BD
+builder.Services.AddScoped<ClientContext>();
 
 if (app.Environment.IsDevelopment())
 {

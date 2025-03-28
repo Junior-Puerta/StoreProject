@@ -8,7 +8,7 @@ namespace StoreProject.ClientModels
     public class ClientModel
     {
 
-        public ClientModel(string name, string cpf, int phoneNumber, DateTime birthDate)
+        public ClientModel(string name, string cpf, long phoneNumber, DateTime birthDate)
         {
             Id = Guid.NewGuid();
             Name = name.ToUpper();
